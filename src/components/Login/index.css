@@ -1,0 +1,131 @@
+.login-bg-container{
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 90%;
+    height: 70vh;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inputs-container{
+    background-image: linear-gradient(rgb(70, 229, 232), rgb(54, 107, 141));
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.login-img-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    height: 300px;
+}
+
+.login-heading{
+    color: white;
+    font-family: 'Roboto';
+}
+
+.label-name{
+    color: white;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.inputs-inner-container{
+    margin-top: 15px;
+}
+
+.input-elements{
+    font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 4px;
+  margin-top: 5px;
+  padding: 6px 16px 6px 16px;
+  outline: none;
+  width: 250px;
+}
+
+.login-button{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.login-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease;
+}
+
+.login-button:hover::before {
+    left: 100%;
+}
+
+.error-msg{
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgb(190, 8, 8);
+}
+
+@media screen and (max-width: 768px){
+    .form-container{
+        flex-direction: column;
+        height: 90vh;
+        max-width: 90%;
+    }
+
+    .image{
+        width: 250px;
+    }
+
+    .inputs-container{
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+}
