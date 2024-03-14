@@ -6,9 +6,13 @@ const JokesList = (props) => {
 
     return(
         <tr>
-            <td>{id}</td>
-            <td>{category}</td>
-            <td>{joke}</td>
+            {id !== 28 && (
+            <>
+                <td>{id}</td>
+                <td>{category}</td>
+                <td>{joke}</td>
+            </>
+            )}
         </tr>
     )
 }
